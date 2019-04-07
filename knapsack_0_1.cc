@@ -60,7 +60,7 @@ for (i = 0; i <= 4; i++)
 {       cout<<"\t";
 	for (int j = 0; j <= 8; j++)
 	{
-		cout << k[n][w] << "\t";
+		cout << k[i][j] << "\t";
 	}
 	cout<<"\n";
 }
