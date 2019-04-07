@@ -65,5 +65,24 @@ for (i = 0; i <= 4; i++)
 	cout<<"\n";
 }
 
+//CHECKING OBJECTS TO BE INCLUDED	
+i=n;
+j=m;
+cout<<"\n\n\t The objects to be included are:-\n";
+while(i>0 && j>0)
+{
+ if(k[i][j] == k[i-1][j])
+ {
+   i--;
+ }
+ else
+ {
+   cout<<"\t"<<i<<"\n";
+   pr += p[i];
+   i--;
+   j= j-wt[i];
+  }
+}
+cout<<"\n\t Maximum profit is "<<pr;
 getch();
 }
