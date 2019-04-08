@@ -1,8 +1,6 @@
 package knapsackDyn;
 import java.util.Scanner;
 
-
-
 public class knapp 
 {
 	//max function
@@ -14,9 +12,11 @@ public class knapp
 	 return b;
 	}
 	
+    //Main function	
     public static void main(String args[])
 	{
 		int nObj,cap;
+	        // nObj stores the number of Objects and cap stores the capacity of the sack
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -46,7 +46,7 @@ public class knapp
 			wt[i]= input.nextInt();
 		}
 		
-
+                //using formula
 		for ( i = 0; i <= n; i++)
 		{
 			for (w = 0; w <= m; w++)
@@ -80,7 +80,7 @@ public class knapp
 	
 	System.out.println("\t weight  ");
 	for(i=1;i<=n;i++)
-    System.out.println(wt[i] + "\t");
+        System.out.println(wt[i] + "\t");
 
 	System.out.println("\n");
 	
@@ -91,6 +91,7 @@ public class knapp
 
 	System.out.println("\n\n");
 
+	    
 	//showing in tabular form
 	System.out.println("In tabular form:- \n\n");
 	for(i=0;i<=n;i++)
